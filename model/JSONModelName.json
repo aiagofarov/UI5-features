@@ -1,0 +1,23 @@
+{
+	"element1": {
+		"field1": "data1",
+		"field2": "data2",
+		"field3": "data3"
+	},
+	"table1": [{
+		"field1": "table element 1",
+		"field2": "table element 2",
+		"hidden_field1": "hidden table element 1",
+		"hidden_field2": "hidden table element 2"
+	}, {
+		"field1": "table element 3",
+		"field2": "table element 4",
+		"hidden_field1": "hidden table element 3",
+		"hidden_field2": "hidden table element 4"
+	},{
+		"field1": "table element 5",
+		"field2": "table element 6",
+		"hidden_field1": "hidden table element 5",
+		"hidden_field2": "hidden table element 6"
+	}]
+}
