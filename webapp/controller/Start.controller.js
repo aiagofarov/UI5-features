@@ -1,12 +1,12 @@
 sap.ui.define([
-	"JustForFunFirstProjectJustForFun/controller/BaseController",
-	"JustForFunFirstProjectJustForFun/modules/utils",
+	"UI5-features/controller/BaseController",
+	"UI5-features/modules/utils",
 	"sap/ui/model/json/JSONModel"
 	
 ], function(BaseController, Utils, JSONModel) {
 	"use strict";
 
-	return BaseController.extend("JustForFunFirstProjectJustForFun.controller.Start", {
+	return BaseController.extend("UI5-features.controller.Start", {
 		onInit: function() {
 			//Set simple data model
 			var oData = {

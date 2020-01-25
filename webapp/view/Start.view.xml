@@ -1,4 +1,4 @@
-<mvc:View controllerName="JustForFunFirstProjectJustForFun.controller.Start" xmlns:html="http://www.w3.org/1999/xhtml"
+<mvc:View controllerName="UI5-features.controller.Start" xmlns:html="http://www.w3.org/1999/xhtml"
 	xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form" displayBlock="true" xmlns="sap.m">
 	<App>
 		<pages>

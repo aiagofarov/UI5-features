@@ -1,7 +1,7 @@
 {
 	"_version": "1.7.0",
 	"sap.app": {
-		"id": "JustForFunFirstProjectJustForFun",
+		"id": "UI5-features",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -39,14 +39,11 @@
 			"tablet": true,
 			"phone": true
 		},
-		"supportedThemes": [
-			"sap_hcb",
-			"sap_belize"
-		]
+		"supportedThemes": ["sap_hcb", "sap_belize"]
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "JustForFunFirstProjectJustForFun.view.Start",
+			"viewName": "UI5-features.view.Start",
 			"type": "XML"
 		},
 		"dependencies": {
@@ -76,8 +73,8 @@
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/JSONModelName.json"
 			},
-			"MyODataModel":{
-				"type":"sap.ui.model.odata.v2.ODataModel",
+			"MyODataModel": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
 				"settings": {
 					"defaultOperationMode": "Server",
 					"defaultBindingMode": "TwoWay",
@@ -89,11 +86,9 @@
 			}
 		},
 		"resources": {
-			"css": [
-				{
-					"uri": "css/style.css"
-				}
-			]
+			"css": [{
+				"uri": "css/style.css"
+			}]
 		}
 	}
 }

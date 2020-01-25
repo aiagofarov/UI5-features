@@ -3,7 +3,7 @@ sap.ui.define(
 	function(Controller) {
 		'use strict';
 
-		return Controller.extend('JustForFunFirstProjectJustForFun.controller.BaseController', {
+		return Controller.extend('UI5-features.controller.BaseController', {
 			baseControllerParameter: "I'm base controller parameter!",
 			baseControllerFunction: function() {
 				alert("Base controller function has been executed!");
