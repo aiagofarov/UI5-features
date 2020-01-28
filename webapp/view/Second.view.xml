@@ -1,12 +1,25 @@
-<mvc:View
-		xmlns="sap.m"
-		xmlns:mvc="sap.ui.core.mvc">
-	<Page title="{i18n>homePageTitle}">
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+	<Page title="{i18n>titleSecond}">
 		<headerContent>
-			<Text text = "Hi! I'm text on second view" />
+
 		</headerContent>
 		<content>
-			<Text text = "Hi! I'm second one text on second view" />
+			<Table id="tab2" items="{MyODataModel>/ContactSet}">
+				<columns>
+					<Column width="auto">
+						<Label text="FieldName0"/>
+					</Column>
+					<Column width="auto">
+						<Label text="FieldName1"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<Text text="{MyODataModel>ContactGuid}"/>
+						<Text text="{MyODataModel>Address/Street}"/>
+					</ColumnListItem>
+				</items>
+			</Table>
 		</content>
 	</Page>
 </mvc:View>

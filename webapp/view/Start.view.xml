@@ -1,53 +1,51 @@
-<mvc:View controllerName="UI5-features.controller.Start" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form">
-	<Page title="{i18n>title}">
+<mvc:View controllerName="UI5-features.controller.Start" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<Page title="{i18n>titleStart}">
 		<content>
-			<Text text="I'm body"/>
-			<Input value="I show data from model: {ModelName>/element1/field1}"/>
-			<Input value="I show data from JSON file: {MyJSONModel>/element1/field1}"/>
-			<Table id="tab1" items="{MyJSONModel>/table1}" itemPress="onClickOnItem">
-				<columns>
-					<Column width="auto">
-						<Label text="FieldName0"/>
-					</Column>
-					<Column width="auto">
-						<Label text="FieldName1"/>
-					</Column>
-					<Column width="auto">
-						<Label text="FieldName2"/>
-					</Column>
-				</columns>
-				<items>
-					<ColumnListItem type="Active">
-						<Text text="Hi!"/>
-						<Text text="{MyJSONModel>field1}"/>
-						<Text text="{MyJSONModel>field2}"/>
-					</ColumnListItem>
-				</items>
-			</Table>
-			<f:SimpleForm id="formForElementBinding">
-				<f:content>
-					<Label text="Hidden field 1"/>
-					<Input value="{MyJSONModel>hidden_field1}"/>
-					<Label text="Hidden field 2"/>
-					<Input value="{MyJSONModel>hidden_field2}"/>
-				</f:content>
-			</f:SimpleForm>
-			<Table id="tab2" items="{MyODataModel>/ContactSet}">
-				<columns>
-					<Column width="auto">
-						<Label text="FieldName0"/>
-					</Column>
-					<Column width="auto">
-						<Label text="FieldName1"/>
-					</Column>
-				</columns>
-				<items>
-					<ColumnListItem>
-						<Text text="{MyODataModel>ContactGuid}"/>
-						<Text text="{MyODataModel>Address/Street}"/>
-					</ColumnListItem>
-				</items>
-			</Table>
+			<l:VerticalLayout id="containerLayout" width="100%">
+				<l:BlockLayout id="BlockLayout" background="Light">
+					<l:BlockLayoutRow >
+						<l:BlockLayoutCell title = "Simple binding" width = "2">
+							<Input value="I show data from model: {ModelName>/element1/field1}"/>
+							<Input value="I show data from JSON file: {MyJSONModel>/element1/field1}"/>
+						</l:BlockLayoutCell>
+						<l:BlockLayoutCell>
+							<Text text = "It's two single elements that stored in two independent local models. One of this two models is defined right in code while second one is defined in file JSONModel.json" />
+						</l:BlockLayoutCell>
+					</l:BlockLayoutRow>
+					<l:BlockLayoutRow>
+						<l:BlockLayoutCell title = "Element binding: list" width = "2">
+							<Table id="tab1" items="{MyJSONModel>/table1}" itemPress="onClickOnItem">
+								<columns>
+									<Column width="auto">
+										<Label text="FieldName1"/>
+									</Column>
+									<Column width="auto">
+										<Label text="FieldName2"/>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem type="Active">
+										<Text text="{MyJSONModel>field1}"/>
+										<Text text="{MyJSONModel>field2}"/>
+									</ColumnListItem>
+								</items>
+							</Table>
+							<f:SimpleForm id="formForElementBinding">
+								<f:content>
+									<Label text="Hidden field 1"/>
+									<Input value="{MyJSONModel>hidden_field1}"/>
+									<Label text="Hidden field 2"/>
+									<Input value="{MyJSONModel>hidden_field2}"/>
+								</f:content>
+							</f:SimpleForm>
+						</l:BlockLayoutCell>
+						<l:BlockLayoutCell>
+							<Text text = "This is the element binding. On click on the table entry system binds appropriate element to the form. Now it works as two way binding so changes of the data in form would be in data model " />
+						</l:BlockLayoutCell>
+					</l:BlockLayoutRow>
+				</l:BlockLayout>
+			</l:VerticalLayout>
 		</content>
 		<footer>
 			<Toolbar>

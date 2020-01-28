@@ -9,7 +9,5 @@ sap.ui.define( ["sap/ui/core/mvc/Controller"],
 			baseControllerFunction: function() {
 				alert("Base controller function has been executed!");
 			}
-		
-
 		});
 	});
