@@ -1,0 +1,12 @@
+<mvc:View
+		xmlns="sap.m"
+		xmlns:mvc="sap.ui.core.mvc">
+	<Page title="{i18n>homePageTitle}">
+		<headerContent>
+			<Text text = "Hi! I'm text on second view" />
+		</headerContent>
+		<content>
+			<Text text = "Hi! I'm second one text on second view" />
+		</content>
+	</Page>
+</mvc:View>

@@ -43,8 +43,9 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "UI5-features.view.Start",
-			"type": "XML"
+			"viewName": "UI5-features.view.App",
+			"type": "XML",
+			"id": "rootViewId"
 		},
 		"dependencies": {
 			"minUI5Version": "1.30.0",
@@ -66,7 +67,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "JustForFunFirstProjectJustForFun.i18n.i18n"
+					"bundleName": "UI5-features.i18n.i18n"
 				}
 			},
 			"MyJSONModel": {
@@ -83,6 +84,38 @@
 				},
 				"dataSource": "GWSAMPLE_BASIC",
 				"preload": true
+			}
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "UI5-features.view",
+				"controlId": "rootViewId",
+				"controlAggregation": "pages",
+				"transition": "slide",
+				"async": true
+			},
+			"routes": [{
+				"pattern": "",
+				"name": "startRoute",
+				"target": "startTarget"
+			}, {
+				"pattern": "secondPageHash",
+				"name": "secondRoute",
+				"target": "secondTarget"
+			}],
+			"targets": {
+				"startTarget": {
+					"viewId": "start",
+					"viewName": "Start",
+					"viewLevel": 1
+				},
+				"secondTarget": {
+					"viewId": "second",
+					"viewName": "Second",
+					"viewLevel": 1
+				}
 			}
 		},
 		"resources": {

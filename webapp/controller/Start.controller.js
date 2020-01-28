@@ -22,7 +22,7 @@ sap.ui.define([
 			this.utils = new Utils();
 		},
 
-		action: function() {
+		actionBtn1: function() {
 			var btnToolbar = this.byId("btnToolbar");
 			if (btnToolbar) {
 				btnToolbar.setText("I pressed!");
@@ -42,6 +42,12 @@ sap.ui.define([
 			//Check utils module functions
 			this.utils.utilFunction();
 			
+		},
+		
+		actionBtn2: function() {
+			//Step on next view
+			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("secondRoute");
 		},
 
 		onClickOnItem: function(oEvent) {
