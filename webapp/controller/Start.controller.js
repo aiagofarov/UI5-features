@@ -59,6 +59,10 @@ sap.ui.define([
 			var sBindingPath = oItem.getBindingContextPath();
 			var oPanel = this.byId("formForElementBinding");
 			oPanel.bindElement({path : sBindingPath, model : "MyJSONModel"});
+		},
+		
+		onChangeFormElement : function(){
+			this.byId("msgStripElement").setVisible(true);	
 		}
 	});
 });

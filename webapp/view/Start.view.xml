@@ -38,22 +38,23 @@
 							</l:VerticalLayout>
 						</l:BlockLayoutCell>
 						<l:BlockLayoutCell title="Selected element" width="2">
-							<f:SimpleForm id="formForElementBinding">
+							<f:SimpleForm id="formForElementBinding" layout = "ResponsiveGridLayout">
 								<f:content>
 									<Label text="Field 1"/>
 									<Input value="{MyJSONModel>field1}" editable="false"/>
 									<Label text="Field 2"/>
 									<Input value="{MyJSONModel>field2}" editable="false"/>
 									<Label text="Hidden field 1"/>
-									<Input value="{MyJSONModel>hidden_field1}"/>
+									<Input value="{MyJSONModel>hidden_field1}" change = "onChangeFormElement"/>
 									<Label text="Hidden field 2"/>
-									<Input value="{MyJSONModel>hidden_field2}"/>
+									<Input value="{MyJSONModel>hidden_field2}" change = "onChangeFormElement"/>
+									<MessageStrip id="msgStripElement" visible = "false" type="Warning" text="Note: Changes on form data affect the data model" showCloseButton = "true" />
 								</f:content>
 							</f:SimpleForm>
 						</l:BlockLayoutCell>
 						<l:BlockLayoutCell>
 							<Text
-								text="This is the element binding. On click on the table entry system binds appropriate element to the form. Now it works as two way binding so changes of the data in form would affect the data model "/>
+								text="This is the element binding. On click on the table entry system binds appropriate element to the form."/>
 						</l:BlockLayoutCell>
 					</l:BlockLayoutRow>
 				</l:BlockLayout>
