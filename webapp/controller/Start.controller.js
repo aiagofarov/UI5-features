@@ -28,7 +28,7 @@ sap.ui.define([
 				btnToolbar.setText("I pressed!");
 			}
 			
-			var oModel = this.getView().getModel('MyJSONModel');
+			var oModel = this.getView().getModel("MyJSONModel");
 			if (oModel) {
 				//Check model that been defined just in JS code
 				alert( "Model MyJSONModel is here!" );

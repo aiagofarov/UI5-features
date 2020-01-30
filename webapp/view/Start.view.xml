@@ -4,12 +4,21 @@
 		<content>
 			<l:VerticalLayout id="containerLayout" width="100%">
 				<l:BlockLayout id="BlockLayout" background="Light">
-					<l:BlockLayoutRow >
+					<l:BlockLayoutRow>
 						<l:BlockLayoutCell title="Simple binding" width="3">
-							<Input value="Data from hardcoded model: {ModelName>/element1/field1}"/>
-							<Input value="Data from model based on json file: {MyJSONModel>/element1/field1}"/>
-							<Input
-								value="Expression binding based on random: {= Math.random() > 0.5 ? 'Last Math.random() result is more than 0.5' : 'Last Math.random() result is less than 0.5' }"/>
+							<f:SimpleForm layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="8" labelSpanS="12">
+								<f:content>
+									<Label text="Hardcoded model data binding"/>
+									<Input value="{ModelName>/element1/field1}"/>
+									<Label text="JSON model data binding"/>
+									<Input value="Data from model based on json file: {MyJSONModel>/element1/field1}"/>
+									<Label text="Expression binding based on random"/>
+									<Input value="{= Math.random() > 0.5 ? 'Last Math.random() result is more than 0.5' : 'Last Math.random() result is less than 0.5' }"/>
+									<Label text="Binding with 'Email' formatting"/>
+									<Input value="{MyJSONModel>/element1/field4email}" type="Email"/>
+									<Label text="Binding with custom formatting"/>
+								</f:content>
+							</f:SimpleForm>
 						</l:BlockLayoutCell>
 						<l:BlockLayoutCell>
 							<Text
@@ -38,23 +47,23 @@
 							</l:VerticalLayout>
 						</l:BlockLayoutCell>
 						<l:BlockLayoutCell title="Selected element" width="2">
-							<f:SimpleForm id="formForElementBinding" layout = "ResponsiveGridLayout">
+							<f:SimpleForm id="formForElementBinding" layout="ResponsiveGridLayout">
 								<f:content>
 									<Label text="Field 1"/>
 									<Input value="{MyJSONModel>field1}" editable="false"/>
 									<Label text="Field 2"/>
 									<Input value="{MyJSONModel>field2}" editable="false"/>
 									<Label text="Hidden field 1"/>
-									<Input value="{MyJSONModel>hidden_field1}" change = "onChangeFormElement"/>
+									<Input value="{MyJSONModel>hidden_field1}" change="onChangeFormElement"/>
 									<Label text="Hidden field 2"/>
-									<Input value="{MyJSONModel>hidden_field2}" change = "onChangeFormElement"/>
-									<MessageStrip id="msgStripElement" visible = "false" type="Warning" text="Note: Changes on form data affect the data model" showCloseButton = "true" />
+									<Input value="{MyJSONModel>hidden_field2}" change="onChangeFormElement"/>
+									<MessageStrip id="msgStripElement" visible="false" type="Warning" text="Note: Changes on form data affect the data model"
+										showCloseButton="true"/>
 								</f:content>
 							</f:SimpleForm>
 						</l:BlockLayoutCell>
 						<l:BlockLayoutCell>
-							<Text
-								text="This is the element binding. On click on the table entry system binds appropriate element to the form."/>
+							<Text text="This is the element binding. On click on the table entry system binds appropriate element to the form."/>
 						</l:BlockLayoutCell>
 					</l:BlockLayoutRow>
 				</l:BlockLayout>
