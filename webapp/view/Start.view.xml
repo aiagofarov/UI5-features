@@ -5,35 +5,45 @@
 			<l:VerticalLayout id="containerLayout" width="100%">
 				<l:BlockLayout id="BlockLayout" background="Light">
 					<l:BlockLayoutRow >
-						<l:BlockLayoutCell title = "Simple binding" width = "3">
+						<l:BlockLayoutCell title="Simple binding" width="3">
 							<Input value="Data from hardcoded model: {ModelName>/element1/field1}"/>
 							<Input value="Data from model based on json file: {MyJSONModel>/element1/field1}"/>
-							<Input value="Expression binding based on random: {= Math.random() > 0.5 ? 'Last Math.random() result is more than 0.5' : 'Last Math.random() result is less than 0.5' }"/>
+							<Input
+								value="Expression binding based on random: {= Math.random() > 0.5 ? 'Last Math.random() result is more than 0.5' : 'Last Math.random() result is less than 0.5' }"/>
 						</l:BlockLayoutCell>
 						<l:BlockLayoutCell>
-							<Text text = "It's two single elements that stored in two independent local models. One of this two models is defined right in code while second one is defined in file JSONModel.json" />
+							<Text
+								text="It's two single elements that stored in two independent local models. One of this two models is defined right in code while second one is defined in file JSONModel.json"/>
 						</l:BlockLayoutCell>
 					</l:BlockLayoutRow>
 					<l:BlockLayoutRow>
-						<l:BlockLayoutCell title = "Element binding" width = "3">
-							<Table id="tab1" items="{MyJSONModel>/table1}" itemPress="onClickOnItem">
-								<columns>
-									<Column width="auto">
-										<Label text="FieldName1"/>
-									</Column>
-									<Column width="auto">
-										<Label text="FieldName2"/>
-									</Column>
-								</columns>
-								<items>
-									<ColumnListItem type="Active">
-										<Text text="{MyJSONModel>field1}"/>
-										<Text text="{MyJSONModel>field2}"/>
-									</ColumnListItem>
-								</items>
-							</Table>
+						<l:BlockLayoutCell title="Collection" width="1">
+							<l:VerticalLayout class="sapUiContentPadding">
+								<Table id="tab1" items="{MyJSONModel>/table1}" itemPress="onClickOnItem">
+									<columns>
+										<Column width="auto">
+											<Label text="Field 1"/>
+										</Column>
+										<Column width="auto">
+											<Label text="Field 2"/>
+										</Column>
+									</columns>
+									<items>
+										<ColumnListItem type="Active">
+											<Text text="{MyJSONModel>field1}"/>
+											<Text text="{MyJSONModel>field2}"/>
+										</ColumnListItem>
+									</items>
+								</Table>
+							</l:VerticalLayout>
+						</l:BlockLayoutCell>
+						<l:BlockLayoutCell title="Selected element" width="2">
 							<f:SimpleForm id="formForElementBinding">
 								<f:content>
+									<Label text="Field 1"/>
+									<Input value="{MyJSONModel>field1}" editable="false"/>
+									<Label text="Field 2"/>
+									<Input value="{MyJSONModel>field2}" editable="false"/>
 									<Label text="Hidden field 1"/>
 									<Input value="{MyJSONModel>hidden_field1}"/>
 									<Label text="Hidden field 2"/>
@@ -42,7 +52,8 @@
 							</f:SimpleForm>
 						</l:BlockLayoutCell>
 						<l:BlockLayoutCell>
-							<Text text = "This is the element binding. On click on the table entry system binds appropriate element to the form. Now it works as two way binding so changes of the data in form would be in data model " />
+							<Text
+								text="This is the element binding. On click on the table entry system binds appropriate element to the form. Now it works as two way binding so changes of the data in form would affect the data model "/>
 						</l:BlockLayoutCell>
 					</l:BlockLayoutRow>
 				</l:BlockLayout>
