@@ -1,9 +1,9 @@
-sap.ui.define(["sap/ui/core/mvc/Controller", "sap/ui/core/routing/History"],
-	function(Controller, History) {
+sap.ui.define(["sap/ui/core/mvc/Controller", "sap/ui/core/routing/History", "../model/formatter"],
+	function(Controller, History, formatter) {
 		'use strict';
 
 		return Controller.extend('UI5-features.controller.BaseController', {
-
+			formatter : formatter,
 			baseControllerParameter: "I'm base controller parameter!",
 
 			baseControllerFunction: function() {

@@ -3,7 +3,8 @@
 		"field1": "data1",
 		"field2": "data2",
 		"field3": "data3",
-		"field4email": "alexandr.iagofarov@gmail.com"
+		"field4email": "alexandr.iagofarov@gmail.com",
+		"field5float": "0.6"
 	},
 	"table1": [{
 		"field1": "table element 1.1",
