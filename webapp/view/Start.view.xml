@@ -1,6 +1,12 @@
 <mvc:View controllerName="UI5-features.controller.Start" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
 	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
 	<Page title="{i18n>titleStart}">
+		<Toolbar>
+				<Button id="btnNavSecond" text="OData" press="onNavSecond"/>
+				<Button id="btnNavThird" text="List->Item" press="onNavThird"/>			
+				<ToolbarSeparator />
+				<Button id="btnToolbar" text="I'm toolbar button" press="actionBtn1"/>
+		</Toolbar>
 		<content>
 			<l:VerticalLayout id="containerLayout" width="100%">
 				<l:BlockLayout id="BlockLayout" background="Light">
@@ -70,12 +76,6 @@
 				</l:BlockLayout>
 			</l:VerticalLayout>
 		</content>
-		<footer>
-			<Toolbar>
-				<Text id="txtToolbar" text="I'm toolbar footer"/>
-				<Button id="btnToolbar" text="I'm toolbar button" press="actionBtn1"/>
-				<Button id="btnToolbar2" text="Route to the next screen" press="actionBtn2"/>
-			</Toolbar>
-		</footer>
+
 	</Page>
 </mvc:View>

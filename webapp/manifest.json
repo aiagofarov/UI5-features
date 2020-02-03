@@ -104,6 +104,14 @@
 				"pattern": "secondPageHash",
 				"name": "secondRoute",
 				"target": "secondTarget"
+			}, {
+				"pattern": "thirdPageHash",
+				"name": "thirdRoute",
+				"target": "thirdTarget"
+			},{
+				"pattern": "fourthPageHash",
+				"name": "fourthRoute",
+				"target": "fourthTarget"
 			}],
 			"targets": {
 				"startTarget": {
@@ -114,6 +122,16 @@
 				"secondTarget": {
 					"viewId": "second",
 					"viewName": "Second",
+					"viewLevel": 1
+				},
+				"thirdTarget": {
+					"viewId": "third",
+					"viewName": "Third",
+					"viewLevel": 1
+				},
+				"fourthTarget": {
+					"viewId": "fourth",
+					"viewName": "Fourth",
 					"viewLevel": 1
 				}
 			}

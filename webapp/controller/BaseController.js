@@ -17,6 +17,18 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/ui/core/routing/History", "../
 				} else {
 					this.getRouter().navTo("appHome", {}, true /*no history*/ );
 				}
-			}
+			},
+
+		onNavSecond: function() {
+			//Step on next view
+			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("secondRoute");
+		},
+		onNavThird: function() {
+			//Step on next view
+			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("thirdRoute");
+		}
+	
 		});
 	});

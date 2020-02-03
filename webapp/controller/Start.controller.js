@@ -36,20 +36,11 @@ sap.ui.define([
 				alert( "Model MyJSONModel not found!" );
 			}
 			
-        	//Check baseController module functions
-			this.baseControllerFunction();
-			
 			//Check utils module functions
 			this.utils.utilFunction();
 			
 		},
 		
-		actionBtn2: function() {
-			//Step on next view
-			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			oRouter.navTo("secondRoute");
-		},
-
 		onClickOnItem: function(oEvent) {
 			var oModel = this.getView().getModel("MyJSONModel");
 			//alert("Table item has been clicked!");
