@@ -3,9 +3,11 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/ui/core/routing/History", "../
 		'use strict';
 
 		return Controller.extend('UI5-features.controller.BaseController', {
-			formatter : formatter,
+			formatter: formatter,
 			baseControllerParameter: "I'm base controller parameter!",
 
+			onInit: function() {
+			},
 			baseControllerFunction: function() {
 				alert("Base controller function has been executed!");
 			},
@@ -19,16 +21,17 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/ui/core/routing/History", "../
 				}
 			},
 
-		onNavSecond: function() {
-			//Step on next view
-			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			oRouter.navTo("secondRoute");
-		},
-		onNavThird: function() {
-			//Step on next view
-			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			oRouter.navTo("thirdRoute");
-		}
-	
+			onNavSecond: function() {
+				//Step on next view
+				var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+				oRouter.navTo("secondRoute");
+			},
+
+			onNavThird: function() {
+				//Step on next view
+				var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+				oRouter.navTo("thirdRoute");
+			}
+
 		});
 	});

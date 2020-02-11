@@ -1,10 +1,15 @@
 <mvc:View controllerName="UI5-features.controller.Third" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc">
-	<Page title="{i18n>titleThird}" showNavButton = "true" navButtonPress="onNavBack">
-		<headerContent>
-	
-		</headerContent>
+	<Page title="{i18n>titleThird}" showNavButton="true" navButtonPress="onNavBack">
+		<headerContent></headerContent>
 		<content>
-	
+			<List id="list1" items="{MyJSONModel>/table1}">
+			    <ObjectListItem type="Active" press="onClickOnItem">
+			        <attributes>
+			            <ObjectAttribute text="{MyJSONModel>field1}"/>
+			            <ObjectAttribute text="{MyJSONModel>field2}"/>
+			        </attributes>
+			    </ObjectListItem>
+			</List>
 		</content>
 	</Page>
 </mvc:View>

@@ -27,7 +27,7 @@ sap.ui.define([
 			if (btnToolbar) {
 				btnToolbar.setText("I pressed!");
 			}
-			
+
 			var oModel = this.getView().getModel("MyJSONModel");
 			if (oModel) {
 				//Check model that been defined just in JS code
@@ -35,14 +35,14 @@ sap.ui.define([
 			} else {
 				alert( "Model MyJSONModel not found!" );
 			}
-			
+
 			//Check utils module functions
 			this.utils.utilFunction();
-			
+
 		},
 		
 		onClickOnItem: function(oEvent) {
-			var oModel = this.getView().getModel("MyJSONModel");
+			//var oModel = this.getView().getModel("MyJSONModel");
 			//alert("Table item has been clicked!");
 			
 			//Element binding

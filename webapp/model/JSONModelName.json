@@ -7,16 +7,19 @@
 		"field5float": "0.6"
 	},
 	"table1": [{
+		"id": "0001",
 		"field1": "table element 1.1",
 		"field2": "table element 1.2",
 		"hidden_field1": "hidden table element 1.1",
 		"hidden_field2": "hidden table element 1.2"
 	}, {
+		"id": "0002",
 		"field1": "table element 2.1",
 		"field2": "table element 2.2",
 		"hidden_field1": "hidden table element 2.1",
 		"hidden_field2": "hidden table element 2.2"
 	},{
+		"id": "0003",
 		"field1": "table element 3.1",
 		"field2": "table element 3.2",
 		"hidden_field1": "hidden table element 3.1",

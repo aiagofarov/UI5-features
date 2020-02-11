@@ -109,7 +109,7 @@
 				"name": "thirdRoute",
 				"target": "thirdTarget"
 			},{
-				"pattern": "fourthPageHash",
+				"pattern": "fourthPageHash/{entry_id}",
 				"name": "fourthRoute",
 				"target": "fourthTarget"
 			}],
