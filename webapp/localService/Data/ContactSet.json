@@ -1,0 +1,181 @@
+[{
+	"__metadata": {
+		"id": "https://sapes5.sapdevcenter.com/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/ContactSet(guid'0050568c-901d-1eda-938f-583e31a3a107')",
+		"uri": "https://sapes5.sapdevcenter.com/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/ContactSet(guid'0050568c-901d-1eda-938f-583e31a3a107')",
+		"type": "GWSAMPLE_BASIC.Contact"
+	},
+	"Address": {
+		"__metadata": {
+			"type": "GWSAMPLE_BASIC.CT_Address"
+		},
+		"City": "Walldorf",
+		"PostalCode": "69190",
+		"Street": "Robert-Koch-Straße",
+		"Building": "1",
+		"Country": "DE",
+		"AddressType": "02"
+	},
+	"ContactGuid": "0050568c-901d-1eda-938f-583e31a3a107",
+	"BusinessPartnerID": "0100000000",
+	"Title": "",
+	"FirstName": "MockKarl",
+	"MiddleName": "",
+	"LastName": "Müller",
+	"Nickname": "",
+	"Initials": "",
+	"Sex": "M",
+	"PhoneNumber": "0622734567",
+	"FaxNumber": "0622734004",
+	"EmailAddress": "do.not.reply@sap.com",
+	"Language": "EN",
+	"DateOfBirth": null,
+	"ToBusinessPartner": {
+		"__deferred": {
+			"uri": "https://sapes5.sapdevcenter.com/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/ContactSet(guid'0050568c-901d-1eda-938f-583e31a3a107')/ToBusinessPartner"
+		}
+	}
+}, {
+	"__metadata": {
+		"id": "https://sapes5.sapdevcenter.com/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/ContactSet(guid'0050568c-901d-1eda-938f-583e31a3c107')",
+		"uri": "https://sapes5.sapdevcenter.com/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/ContactSet(guid'0050568c-901d-1eda-938f-583e31a3c107')",
+		"type": "GWSAMPLE_BASIC.Contact"
+	},
+	"Address": {
+		"__metadata": {
+			"type": "GWSAMPLE_BASIC.CT_Address"
+		},
+		"City": "St.-Leon Rot",
+		"PostalCode": "68789",
+		"Street": "Opelstraße",
+		"Building": "6",
+		"Country": "DE",
+		"AddressType": "02"
+	},
+	"ContactGuid": "0050568c-901d-1eda-938f-583e31a3c107",
+	"BusinessPartnerID": "0100000000",
+	"Title": "",
+	"FirstName": "MockHarald",
+	"MiddleName": "Jens",
+	"LastName": "Gahn",
+	"Nickname": "",
+	"Initials": "",
+	"Sex": "M",
+	"PhoneNumber": "0622746358",
+	"FaxNumber": "0622734004",
+	"EmailAddress": "hjg@sap.com",
+	"Language": "EN",
+	"DateOfBirth": null,
+	"ToBusinessPartner": {
+		"__deferred": {
+			"uri": "https://sapes5.sapdevcenter.com/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/ContactSet(guid'0050568c-901d-1eda-938f-583e31a3c107')/ToBusinessPartner"
+		}
+	}
+}, {
+	"__metadata": {
+		"id": "https://sapes5.sapdevcenter.com/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/ContactSet(guid'0050568c-901d-1eda-938f-583e31a3e107')",
+		"uri": "https://sapes5.sapdevcenter.com/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/ContactSet(guid'0050568c-901d-1eda-938f-583e31a3e107')",
+		"type": "GWSAMPLE_BASIC.Contact"
+	},
+	"Address": {
+		"__metadata": {
+			"type": "GWSAMPLE_BASIC.CT_Address"
+		},
+		"City": "Berlin",
+		"PostalCode": "13467",
+		"Street": "Schulzendorfer Straße",
+		"Building": "101",
+		"Country": "DE",
+		"AddressType": "02"
+	},
+	"ContactGuid": "0050568c-901d-1eda-938f-583e31a3e107",
+	"BusinessPartnerID": "0100000001",
+	"Title": "",
+	"FirstName": "MockDagmar",
+	"MiddleName": "",
+	"LastName": "Schulze",
+	"Nickname": "",
+	"Initials": "",
+	"Sex": "F",
+	"PhoneNumber": "3088530",
+	"FaxNumber": "3088004",
+	"EmailAddress": "dagmar.schulze@beckerberlin.de",
+	"Language": "EN",
+	"DateOfBirth": null,
+	"ToBusinessPartner": {
+		"__deferred": {
+			"uri": "https://sapes5.sapdevcenter.com/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/ContactSet(guid'0050568c-901d-1eda-938f-583e31a3e107')/ToBusinessPartner"
+		}
+	}
+}, {
+	"__metadata": {
+		"id": "https://sapes5.sapdevcenter.com/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/ContactSet(guid'0050568c-901d-1eda-938f-583e31a40107')",
+		"uri": "https://sapes5.sapdevcenter.com/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/ContactSet(guid'0050568c-901d-1eda-938f-583e31a40107')",
+		"type": "GWSAMPLE_BASIC.Contact"
+	},
+	"Address": {
+		"__metadata": {
+			"type": "GWSAMPLE_BASIC.CT_Address"
+		},
+		"City": "Berlin",
+		"PostalCode": "13467",
+		"Street": "Zabel-Krüger-Damm",
+		"Building": "127",
+		"Country": "DE",
+		"AddressType": "02"
+	},
+	"ContactGuid": "0050568c-901d-1eda-938f-583e31a40107",
+	"BusinessPartnerID": "0100000001",
+	"Title": "",
+	"FirstName": "MockUrsula",
+	"MiddleName": "Mariana",
+	"LastName": "Wexler",
+	"Nickname": "",
+	"Initials": "",
+	"Sex": "F",
+	"PhoneNumber": "3088529",
+	"FaxNumber": "3088004",
+	"EmailAddress": "ursula.wexler@beckerberlin.de",
+	"Language": "EN",
+	"DateOfBirth": null,
+	"ToBusinessPartner": {
+		"__deferred": {
+			"uri": "https://sapes5.sapdevcenter.com/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/ContactSet(guid'0050568c-901d-1eda-938f-583e31a40107')/ToBusinessPartner"
+		}
+	}
+}, {
+	"__metadata": {
+		"id": "https://sapes5.sapdevcenter.com/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/ContactSet(guid'0050568c-901d-1eda-938f-583e31a42107')",
+		"uri": "https://sapes5.sapdevcenter.com/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/ContactSet(guid'0050568c-901d-1eda-938f-583e31a42107')",
+		"type": "GWSAMPLE_BASIC.Contact"
+	},
+	"Address": {
+		"__metadata": {
+			"type": "GWSAMPLE_BASIC.CT_Address"
+		},
+		"City": "Wilmington, Delaware",
+		"PostalCode": "19899",
+		"Street": "223 Kirkwood Park",
+		"Building": "1",
+		"Country": "US",
+		"AddressType": "02"
+	},
+	"ContactGuid": "0050568c-901d-1eda-938f-583e31a42107",
+	"BusinessPartnerID": "0100000002",
+	"Title": "",
+	"FirstName": "MockMaria",
+	"MiddleName": "",
+	"LastName": "Brown",
+	"Nickname": "",
+	"Initials": "",
+	"Sex": "F",
+	"PhoneNumber": "3023352668",
+	"FaxNumber": "3023352004",
+	"EmailAddress": "maria.brown@delbont.com",
+	"Language": "EN",
+	"DateOfBirth": null,
+	"ToBusinessPartner": {
+		"__deferred": {
+			"uri": "https://sapes5.sapdevcenter.com/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/ContactSet(guid'0050568c-901d-1eda-938f-583e31a42107')/ToBusinessPartner"
+		}
+	}
+}]

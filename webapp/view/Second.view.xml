@@ -15,7 +15,7 @@
 				</columns>
 				<items>
 					<ColumnListItem>
-						<Text text="{MyODataModel>ContactGuid}"/>
+						<Text text="{MyODataModel>FirstName}"/>
 						<Text text="{MyODataModel>Address/Street}"/>
 					</ColumnListItem>
 				</items>
