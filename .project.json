@@ -49,7 +49,7 @@
   "mockpreview": {
     "mockUri": "/sap/opu/odata/iwbep/GWSAMPLE_BASIC/",
     "metadataFilePath": "localService/metadata.xml",
-    "loadJSONFiles": false,
+    "loadJSONFiles": true,
     "loadCustomRequests": false,
     "mockRequestsFilePath": ""
   }

@@ -16,7 +16,7 @@ sap.ui.define(["sap/ui/core/util/mockserver"], function(MockServer) {
 			});
 
 			this.mainServer.simulate(sPath + "/metadata.xml", {
-				sMockdataBaseUrl: sPath + "/Data",
+				sMockdataBaseUrl: sPath + "/mockdata",
 				bGenerateMissingMockData: true
 			});
 			this.mainServer.start();
