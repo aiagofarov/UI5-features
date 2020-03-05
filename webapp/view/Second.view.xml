@@ -4,22 +4,7 @@
 			
 		</headerContent>
 		<content>
-			<Table id="tab2" items="{MyODataModel>/ContactSet}">
-				<columns>
-					<Column width="auto">
-						<Label text="FieldName0"/>
-					</Column>
-					<Column width="auto">
-						<Label text="FieldName1"/>
-					</Column>
-				</columns>
-				<items>
-					<ColumnListItem>
-						<Text text="{MyODataModel>FirstName}"/>
-						<Text text="{MyODataModel>Address/Street}"/>
-					</ColumnListItem>
-				</items>
-			</Table>
+			<Text text="OData functionality and mock server has been moved to separate repository: https://github.com/aiagofarov/UI5OData.git" />
 		</content>
 	</Page>
 </mvc:View>

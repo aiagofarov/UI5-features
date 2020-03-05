@@ -19,17 +19,9 @@
 
 		<script>
 			sap.ui.getCore().attachInit(function() {
-			//Mock server module will be added dynamically based on parameter ?mock=true
-			var bMock = jQuery.sap.getUriParameters().get('mock') === 'true'; // true - is a string!
 			var aRequire = ['sap/m/Shell', 'sap/ui/core/ComponentContainer'];
-			if(bMock) {
-				aRequire.push('UI5-features/localService/mock');
-			};
 			
-			sap.ui.require(aRequire, function(oShell, oComponentContainer, oMock) {
-				if (oMock) {
-					oMock.init();
-				}
+			sap.ui.require(aRequire, function(oShell, oComponentContainer) {
 			new oShell({
 				app: new sap.ui.core.ComponentContainer({
 					height : "100%",
